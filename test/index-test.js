@@ -11,7 +11,7 @@ describe('managePresents', function() {
   })
 
   it("increases the number of presents if there the action's type is 'INCREASE'", function(){
-    expect(managePresents(state, {type: "INCREASE"})).toEqual({numberOfPresents: 1});
+    expect(managePresents(state, {type: "INCREASE"})).toEqual({numberOfPresents: 1, friends: []});
   })
 
   it("adheres to the rules of being a pure function, by not changing the original state, and instead returning a new object", function(){
